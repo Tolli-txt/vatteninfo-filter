@@ -1,0 +1,259 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  align-content: center;
+  background-color: #fff;
+}
+
+.main-container {
+  align-content: center;
+  padding: 2%;
+}
+
+.navbar {
+  background: linear-gradient(to right, #e5f5ff, #7abfeb);
+  padding: 1.3em;
+  margin-bottom: 1em;
+  color: #0b6b96;
+  font-size: 1em;
+  height: 140px;
+}
+
+.navbar p {
+  font-weight: 600;
+}
+
+.list-info {
+  background-color: #60a3d9;
+  text-align: center;
+  font-size: 18px;
+  color: white;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.button-group {
+  margin-bottom: 30px;
+}
+
+.button-group ul {
+  display: flex;
+  flex-wrap: wrap;
+  list-style-type: none;
+  font-weight: 500;
+  padding-right: 40px;
+}
+
+.button-group ul li {
+  background: #e5f5ff;
+  margin: 5px;
+  padding: 10px;
+  text-align: center;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.2x ease;
+}
+
+.button-group ul li.active,
+.button-group ul li:hover {
+  background: #60a3d9;
+  color: white;
+  font-weight: 500;
+}
+
+.button-group h3 {
+  color: #428bca;
+}
+
+.item-group a,
+a:visited {
+  text-decoration: none;
+  font-size: 20px;
+  cursor: pointer;
+  color: rgb(27, 27, 221);
+}
+
+.item-group ul {
+  display: list-item;
+  list-style-type: none;
+  /* ta bort dessa två under om du vill ha dropdown list, 
+  sen ändra display: list-item */
+  /* justify-content: space-between;
+  flex-wrap: wrap; */
+}
+
+.item {
+  background: whitesmoke;
+  margin: 10px;
+  margin-right: 40px;
+  padding: 15px;
+  padding-top: 25px;
+  padding-bottom: 15px;
+  border-radius: 5px;
+}
+
+#company-group {
+  margin-bottom: 30px;
+}
+
+#company-group ul {
+  display: flex;
+  flex-wrap: wrap;
+  list-style-type: none;
+  font-weight: 500;
+  padding-right: 40px;
+}
+
+#company-group ul li {
+  background: #e5f5ff;
+  margin: 5px;
+  padding: 10px;
+  text-align: center;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.2x ease;
+}
+
+#company-group ul li.active,
+#company-group ul li:hover {
+  background: #60a3d9;
+  color: white;
+  font-weight: 500;
+}
+
+.company-title {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.company-title h3 {
+  /* color: #99b56a; */
+  color: #428bca;
+}
+
+.company-title button {
+  margin: 15px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.teknik-group h3 {
+  color: #428bca;
+}
+
+.teknik-group {
+  margin-bottom: 30px;
+}
+
+.teknik-group ul {
+  display: flex;
+  flex-wrap: wrap;
+  list-style-type: none;
+  font-weight: 500;
+  padding-right: 40px;
+}
+
+.teknik-group ul li {
+  background: #e5f5ff;
+  margin: 5px;
+  padding: 10px;
+  text-align: center;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.2x ease;
+}
+
+.teknik-group ul li.active,
+.teknik-group ul li:hover {
+  background: #60a3d9;
+  color: white;
+  font-weight: 500;
+}
+
+/* For big desktops */
+@media screen and (min-width: 1200px) {
+  body {
+    padding-left: 20%;
+    padding-right: 20%;
+  }
+}
+
+/* For smaller desktops, laptops, etc */
+@media screen and (max-width: 1199px) {
+  body {
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+
+  .navbar {
+    height: 125px;
+    margin-bottom: 0%;
+  }
+
+  .main-container {
+    padding: 1%;
+  }
+
+  .list-info {
+    font-size: 15px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+  }
+}
+
+/* For tablets */
+@media screen and (max-width: 999px) {
+  body {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+
+  body h3 {
+    font-size: 16px;
+  }
+
+  .navbar {
+    height: 125px;
+    margin-bottom: 0%;
+  }
+
+  .main-container {
+    padding: 1%;
+  }
+
+  .list-info {
+    font-size: 13px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+  }
+}
+
+/* For phones */
+@media screen and (max-width: 768px) {
+  body {
+    padding-left: 1%;
+    padding-right: 1%;
+  }
+
+  body h3 {
+    font-size: 16px;
+  }
+
+  .navbar {
+    height: 125px;
+    margin-bottom: 0%;
+  }
+
+  .main-container {
+    padding: 1%;
+  }
+
+  .list-info {
+    font-size: 13px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+  }
+}
